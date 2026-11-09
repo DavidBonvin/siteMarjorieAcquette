@@ -1,0 +1,72 @@
+/* ==========================================================================
+   variables.css — Design tokens globaux
+   Les media queries ne supportent pas var() ; les breakpoints sont donc
+   documentés ici et réutilisés à l'identique dans tous les fichiers :
+     --bp-sm : 600px  |  --bp-md : 900px  |  --bp-lg : 1200px
+   ========================================================================== */
+
+:root {
+  /* ---- Couleurs ---- */
+  /* Identité du logo : tige, feuilles, pétales, cadre circulaire */
+  --color-primary-dark: #2C4437;        /* vert forêt — titres, ancrages forts */
+  --color-primary-muted: #6A8374;       /* vert sauge — icônes, sous-titres, détails */
+  --color-primary-muted-dark: #567062;  /* sauge assombri — petit texte (contraste AA) */
+  --color-accent-pink: #D39E96;         /* rose poudré — hover des boutons, touches sélectes */
+  --color-accent-pink-soft: #F3E4E1;    /* rose très pâle — sélection de texte */
+  --color-accent-gold: #C2A569;         /* doré champagne — filets, bordures fines */
+
+  --color-background: #FAF8F5;          /* crème — fond principal */
+  --color-background-alt: #EFF1EC;      /* voile sauge — sections alternées */
+  --color-surface: #FFFFFF;             /* cartes */
+  --color-text: #333333;                /* gris carbone — paragraphes */
+  --color-text-soft: #5C615D;           /* texte secondaire */
+  --color-border: rgba(44, 68, 55, 0.12);
+  --color-border-gold: rgba(194, 165, 105, 0.45);
+  --color-primary-muted-tint: rgba(106, 131, 116, 0.14);
+  --color-overlay: rgba(44, 68, 55, 0.62);
+
+  /* ---- Typographie ---- */
+  --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1.0625rem;
+  --fs-lg: clamp(1.15rem, 1rem + 0.5vw, 1.35rem);
+  --fs-h3: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  --fs-h2: clamp(2rem, 1.5rem + 2.2vw, 3.25rem);
+  --fs-h1: clamp(2.75rem, 1.8rem + 4.5vw, 5.5rem);
+
+  --lh-body: 1.75;
+  --lh-heading: 1.12;
+  --tracking-caps: 0.18em;
+
+  /* ---- Espacements ---- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --space-xl: clamp(3rem, 2rem + 4vw, 5.5rem);
+  --section-padding: clamp(4.5rem, 3rem + 8vw, 9rem);  /* grand padding vertical */
+  --container-width: 1200px;
+  --container-narrow: 760px;
+  --gutter: clamp(1.25rem, 0.5rem + 4vw, 3rem);
+
+  /* ---- Formes & ombres ---- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 6px 24px rgba(44, 68, 55, 0.07);
+  --shadow-hover: 0 22px 48px rgba(44, 68, 55, 0.14);
+
+  /* ---- Mouvement ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-card: all 0.4s var(--ease-out);
+  --transition-fast: 0.25s ease;
+
+  /* ---- Layout ---- */
+  --header-height: 80px;
+  --z-header: 100;
+  --z-menu: 90;
+}
