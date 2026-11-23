@@ -125,6 +125,8 @@
     clip-path: none;
     visibility: visible;
     transition: none;
+    opacity: 1;
+    pointer-events: auto;
   }
   .nav__list { flex-direction: row; gap: clamp(1.5rem, 3vw, 3rem); }
   .nav__link {
