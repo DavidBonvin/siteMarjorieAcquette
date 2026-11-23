@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Questions fréquentes — Marjorie Acquette</title>
+  <meta name="description" content="Réponses aux questions fréquentes sur la réflexologie, les séances, les tarifs et les précautions à connaître.">
+  <meta name="theme-color" content="#FAF8F5">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header-footer.css">
+  <style>
+    .faq-grid { display: grid; gap: var(--space-md); }
+
+    .faq-item {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-gold);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition-card);
+    }
+    .faq-item:hover { box-shadow: var(--shadow-soft); }
+
+    .faq-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      padding: var(--space-lg);
+      text-align: left;
+      font-size: var(--fs-base);
+      font-weight: 500;
+      color: var(--color-primary-dark);
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    .faq-trigger:hover { color: var(--color-accent-gold); }
+
+    .faq-trigger::after {
+      content: '';
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-top: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      transform: rotate(45deg);
+      transition: transform var(--transition-fast);
+    }
+    .faq-item.is-open .faq-trigger::after { transform: rotate(-135deg); }
+
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height var(--transition-fast);
+    }
+    .faq-item.is-open .faq-content { max-height: 1000px; }
+
+    .faq-answer {
+      padding: 0 var(--space-lg) var(--space-lg);
+      font-size: var(--fs-sm);
+      line-height: 1.8;
+      color: var(--color-text-soft);
+    }
+    .faq-answer p { margin-bottom: var(--space-sm); }
+    .faq-answer p:last-child { margin-bottom: 0; }
+    .faq-answer strong { color: var(--color-primary-dark); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .faq-trigger::after, .faq-content { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo" aria-label="Marjorie Acquette — Accueil">
+        Marjorie Acquette
+        <small>Réflexologue</small>
+      </a>
+
+      <button class="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span class="burger__bar"></span>
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Accueil</a></li>
+          <li><a class="nav__link" href="about.html">Mon approche</a></li>
+          <li><a class="nav__link" href="services.html">Prestations</a></li>
+          <li><a class="nav__link" href="entreprises.html">Entreprises</a></li>
+          <li><a class="nav__link" href="faq.html" aria-current="page">FAQ</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html#reservation" class="btn btn--primary">Réserver</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="eyebrow">Questions fréquentes</span>
+        <h1>Vos réponses</h1>
+        <p class="lead">Explorez les questions les plus fréquemment posées sur la réflexologie, les séances et mon accompagnement.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section">
+      <div class="container container--narrow reveal">
+        <div class="faq-grid">
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              La réflexologie est-elle adaptée à tous les publics&nbsp;?
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                <p>
+                  Oui, la réflexologie peut s'adresser à tous les âges, des enfants aux personnes âgées. Chaque séance est adaptée à la personne, à son âge, à ses besoins et à sa sensibilité. L'objectif est de proposer un moment de détente et de bien-être personnalisé.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              Que signifie l'énergétique chinoise&nbsp;?
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                <p>
+                  L'énergétique chinoise est une approche ancestrale issue de la philosophie taoïste et de la Médecine Traditionnelle Chinoise. Elle repose sur la recherche d'un équilibre entre le corps, les émotions et l'environnement, notamment à travers la bonne circulation du Qi (énergie vitale) et l'harmonie du Yin et du Yang.
+                </p>
+                <p>
+                  Elle s'appuie également sur la théorie des cinq éléments : <span class="accent-gold">Bois, Feu, Terre, Métal et Eau</span>, qui représentent les différents mouvements énergétiques du corps et leurs interactions. En réflexologie énergétique, ces principes permettent de personnaliser chaque séance afin d'accompagner le corps vers un meilleur équilibre.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              Que ressent-on pendant une séance&nbsp;?
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                <p>
+                  Chaque personne vit la séance différemment. Vous pouvez ressentir une profonde détente, une sensation de chaleur, de légèreté ou parfois une légère sensibilité sur certaines zones réflexes. L'important est de vous laisser porter et d'écouter votre corps.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              Quelles sont les réactions possibles après une séance&nbsp;?
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                <p>
+                  Après une séance, le corps peut réagir de différentes façons, car chaque personne est unique. Il est possible de ressentir une fatigue passagère, des courbatures, des maux de tête, des troubles digestifs, ou encore un regain d'énergie. Ces réactions sont généralement temporaires et peuvent apparaître dans les heures jusqu'à <strong>3 jours</strong> qui suivent la séance.
+                </p>
+                <p>
+                  Certaines personnes ne ressentent aucun effet particulier. Si un effet désagréable persiste, n'hésitez pas à consulter un médecin. Après votre séance, je vous conseille de bien vous hydrater, de vous reposer si besoin et surtout d'être à l'écoute de votre corps.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              Combien de séances dois-je faire&nbsp;?
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                <p>
+                  Tout dépend de vos besoins, de vos attentes et de votre objectif. Une séance ponctuelle peut permettre de s'offrir un moment de détente. Pour un accompagnement dans la durée, plusieurs séances peuvent être envisagées. C'est pourquoi je propose des <span class="accent-gold">forfaits de 3 ou 5 séances</span>, afin de vous permettre de prendre soin de vous régulièrement.
+                </p>
+                <p>
+                  La fréquence dépend de chaque personne et de ses besoins. Les séances peuvent être espacées de quelques semaines ou organisées à un rythme différent selon vos attentes. Nous pourrons définir ensemble la fréquence qui vous convient le mieux.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              Puis-je faire une séance de réflexologie pendant ma grossesse&nbsp;?
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                <p>
+                  La réflexologie pendant la grossesse nécessite certaines précautions. Par principe de prudence, je ne propose pas de séances aux femmes enceintes n'étant pour l'instant pas formée (mais cela fait bien sûr partie des formations que je ferai prochainement&nbsp;!).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              Comment me préparer à une séance&nbsp;?
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                <p>
+                  Il n'y a pas de préparation particulière à prévoir. Venez simplement avec une <strong>tenue confortable</strong> et prenez le temps d'arriver sereinement. Lors de notre première rencontre, nous prendrons quelques instants pour échanger sur vos attentes, vos besoins et vos éventuelles précautions de santé. Vous n'avez plus qu'à profiter de ce moment qui vous est entièrement consacré.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              Quels moyens de paiement acceptez-vous&nbsp;?
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                <p>
+                  Je propose les moyens de paiement suivants :
+                </p>
+                <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: var(--space-sm);">
+                  <li>Espèces</li>
+                  <li>Virement (Wero)</li>
+                  <li>Chèque</li>
+                </ul>
+                <p>
+                  Le paiement se fait sur place à la fin de la séance ou lors de la souscription d'un forfait. Une facture peut être fournie par e-mail sur demande. TVA non applicable (art. 293 B du CGI).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              Y a-t-il des contre-indications&nbsp;?
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                <p>
+                  Merci de m'indiquer lors de la prise de rendez-vous si vous avez un problème de santé ou si vous suivez un traitement. Certaines situations nécessitent des précautions particulières :
+                </p>
+                <p>
+                  <strong>Troubles circulatoires majeurs :</strong> Phlébites déclarées, thromboses ou risques d'embolie récents.
+                </p>
+                <p>
+                  <strong>Inflammations aiguës :</strong> Fièvre importante, infections en cours ou traumatismes récents des pieds (entorses, fractures).
+                </p>
+                <p>
+                  <strong>Grossesse :</strong> Par principe de précaution, je ne fais pas de réflexologie aux femmes enceintes.
+                </p>
+                <p>
+                  <strong>Pathologies lourdes :</strong> Maladies lourdes en phase aiguë ou cancers en cours de traitement médical (sauf accord écrit du médecin traitant).
+                </p>
+                <p>
+                  <strong style="color: var(--color-primary-dark);">La réflexologie est une approche de bien-être et de relaxation qui ne se substitue en aucun cas à un suivi médical, un diagnostic ou un traitement prescrit par un professionnel de santé.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="section section--alt">
+      <div class="container container--narrow reveal" style="text-align: center;">
+        <h2 style="margin-bottom: var(--space-md);">D'autres questions&nbsp;?</h2>
+        <p class="lead" style="margin-bottom: var(--space-lg);">N'hésitez pas à me contacter directement. Je serai ravie de vous répondre.</p>
+        <a href="contact.html#reservation" class="btn btn--primary">Me contacter</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="logo">Marjorie Acquette<small>Réflexologue</small></a>
+          <p class="site-footer__tagline">Harmonie. Équilibre. Bien-être.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">Mon approche</a></li>
+            <li><a href="services.html">Prestations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+33677061689">06.77.06.16.89</a></li>
+            <li><a href="mailto:acquette.m@gmail.com">acquette.m@gmail.com</a></li>
+            <li>Lille &amp; rayon de 30&nbsp;km</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Légalité</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
+            <li><a href="cgv.html">Conditions générales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© 2026 Marjorie Acquette — Tous droits réservés</span>
+        <span>Séances exclusivement sur rendez-vous</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', function() {
+        const item = this.closest('.faq-item');
+        const isOpen = item.classList.contains('is-open');
+        
+        document.querySelectorAll('.faq-item').forEach(el => {
+          el.classList.remove('is-open');
+          el.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+        });
+        
+        if (!isOpen) {
+          item.classList.add('is-open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

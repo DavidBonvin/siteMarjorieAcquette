@@ -66,6 +66,8 @@ p + p { margin-top: 1.1em; }
   line-height: 1.7;
 }
 
+.accent-gold { color: var(--color-accent-gold); font-weight: 500; }
+
 /* ---- Layout ---- */
 .container {
   width: 100%;
